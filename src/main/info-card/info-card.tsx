@@ -12,7 +12,8 @@ function InfoCard({
   };
 
   const handleDownloadCV = () => {
-    const hyperlink = "https://farisalsaif.com/cv.pdf";
+    const hyperlink =
+      "https://personalpbucket.s3.amazonaws.com/Faris-Alsaif+Resume+3.pdf";
     window.open(hyperlink, "_blank");
   };
 

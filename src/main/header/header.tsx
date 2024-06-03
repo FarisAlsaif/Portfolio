@@ -1,8 +1,10 @@
+import logo from "../../assets/logo.png";
+
 function Header() {
   return (
     <div className="flex items-center h-20">
       <div className="flex w-full text-4xl text-neutral-950 ">
-        <img src="/src/assets/logo.png" alt="" className="h-10 " />
+        <img src={logo} alt="" className="h-10 " />
         {/* <span className="text-2xl material-symbols-outlined">polymer</span> */}
         {/* Faris */}
       </div>

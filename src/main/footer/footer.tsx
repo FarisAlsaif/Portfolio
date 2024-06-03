@@ -5,7 +5,7 @@ import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Footer = forwardRef((ref) => {
+const Footer = forwardRef((props, ref) => {
   const socials: SocialType[] = [
     {
       name: "LinkedIn",

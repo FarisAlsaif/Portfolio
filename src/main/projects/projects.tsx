@@ -1,13 +1,15 @@
 import { ProjectType } from "../types";
 import ProjectCard from "./project-card/project-card";
 
+import nyyf from "../../assets/Nyyf-project.png";
+import logo from "../../assets/logo.png";
 function Projects() {
   const projects: ProjectType[] = [
     {
       id: 1,
       name: "Nyyf",
       usedTech: ["Angular", "Nodejs", "Python", "TailwindCSS"],
-      img: "/src/assets/Nyyf-project.png",
+      img: nyyf,
       description: "This is project 1",
       completed: false,
       backgroundColor: "bg-[#176B87]",
@@ -18,7 +20,7 @@ function Projects() {
       id: 2,
       name: "Faris Portfolio",
       usedTech: ["React", "TypeScript", "TailwindCSS"],
-      img: "/src/assets/logo.png",
+      img: logo,
       description: "This is project 2",
       completed: false,
       backgroundColor: "bg-white",
