@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  max-width: 24rem; /* 24rem is approximately 384px, adjust as needed */
+  max-width: 28rem; /* 24rem is approximately 384px, adjust as needed */
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
