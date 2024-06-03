@@ -1,13 +1,11 @@
+import { forwardRef } from "react";
+
 import { SocialType } from "../types";
-import {
-  faLinkedin,
-  faGithub,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Footer() {
+const Footer = forwardRef((ref) => {
   const socials: SocialType[] = [
     {
       name: "LinkedIn",
@@ -33,27 +31,27 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#111827]  -mx-4 px-4 py-8 ">
-      <h1 className="text-5xl text-left text-white ">
-        {" "}
+    <footer
+      ref={ref as React.RefObject<HTMLElement>}
+      className="bg-[#111827] -mx-4 px-4 py-8"
+    >
+      <h1 className="text-5xl text-left text-white">
         Contact
         <br /> info
       </h1>
       <div>
         <div className="flex flex-col gap-4 mt-4">
           {socials.map((social) => (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2" key={social.name}>
               <a
-                key={social.name}
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-4 p-4 rounded-xl text-white w-16 h-16  justify-center   ${social.backgroundColor}`}
+                className={`flex items-center gap-4 p-4 rounded-xl text-white w-16 h-16 justify-center ${social.backgroundColor}`}
               >
                 <span className="text-2xl">
                   <FontAwesomeIcon icon={social.icon} />
                 </span>
-                {/* <span className="text-xl font-medium">{social.name}</span> */}
               </a>
               <div>
                 <span className="text-xl font-medium text-white">
@@ -66,6 +64,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+});
 
 export default Footer;

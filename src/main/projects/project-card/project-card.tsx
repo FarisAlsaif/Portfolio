@@ -8,17 +8,17 @@ function ProjectCard({ project }: { project: ProjectType }) {
         {project.usedTech.map((tech) => (
           <span
             key={tech}
-            className="px-4 py-2 mr-2 text-base text-white bg-[#38bdf8] rounded-3xl"
+            className="px-4 py-2 mr-2 mt-2 text-base text-white bg-[#38bdf8] rounded-3xl"
           >
             {tech}
           </span>
         ))}
       </div>
       <div
-        className={`px-4 pt-12 pb-8 ${project.backgroundColor} w-full rounded-3xl `}
+        className={`flex items-center px-4 pt-12 pb-8 ${project.backgroundColor} w-full rounded-3xl  h-72 `}
       >
         <img
-          className="object-cover w-full rounded-3xl h-52"
+          className="object-cover rounded-3xl"
           src={project.img}
           alt={project.name}
         />
