@@ -6,6 +6,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = forwardRef((props, ref) => {
+  props;
+
   const socials: SocialType[] = [
     {
       name: "LinkedIn",
