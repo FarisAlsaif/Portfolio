@@ -13,7 +13,7 @@ function InfoCard({
 
   const handleDownloadCV = () => {
     const hyperlink =
-      "https://personalpbucket.s3.amazonaws.com/Faris-Alsaif+Resume+3.pdf";
+      "https://personalpbucket.s3.amazonaws.com/Faris-Alsaif+Resume%40Latest.pdf";
     window.open(hyperlink, "_blank");
   };
 
