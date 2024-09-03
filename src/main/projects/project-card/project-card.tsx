@@ -18,7 +18,7 @@ function ProjectCard({ project }: { project: ProjectType }) {
         className={`flex items-center px-4 pt-12 pb-8 ${project.backgroundColor} w-full rounded-3xl  h-72 `}
       >
         <img
-          className="object-cover rounded-3xl"
+          className=" rounded-3xl  object-scale-down h-64 w-full"
           src={project.img}
           alt={project.name}
         />

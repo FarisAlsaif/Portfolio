@@ -3,30 +3,43 @@ import ProjectCard from "./project-card/project-card";
 
 import nyyf from "../../assets/Nyyf-project.png";
 import logo from "../../assets/logo.png";
+import taqsema from "../../assets/taqsema-project.png";
 function Projects() {
   const projects: ProjectType[] = [
     {
       id: 1,
+      name: "Taqsema",
+      usedTech: ["Angular", "TypeScript", "AWS S3","AWS CloudFront", "AWS RDS", "AWS ECS", "AWS ALB"],
+      img: taqsema,
+      description: "This is project 1",
+      completed: false,
+      backgroundColor: "bg-white",
+      // gitHubLink: "https://github.com/FarisAlsaif/Portfolio",
+      liveLink: "https://taqsema.com/",
+    },
+    {
+      id: 2,
       name: "Nyyf",
       usedTech: ["Angular", "Nodejs", "Python", "TailwindCSS"],
       img: nyyf,
-      description: "This is project 1",
+      description: "This is project 2",
       completed: false,
       backgroundColor: "bg-[#176B87]",
       // gitHubLink: "https://github.com",
       liveLink: "https://www.nyyf.app",
     },
     {
-      id: 2,
+      id: 3,
       name: "Faris Portfolio",
       usedTech: ["React", "TypeScript", "TailwindCSS"],
       img: logo,
-      description: "This is project 2",
+      description: "This is project 3",
       completed: false,
       backgroundColor: "bg-white",
       gitHubLink: "https://github.com/FarisAlsaif/Portfolio",
       liveLink: "https://www.nyyf.app",
     },
+
   ];
 
   return (
