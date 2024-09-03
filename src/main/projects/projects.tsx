@@ -37,7 +37,7 @@ function Projects() {
       completed: false,
       backgroundColor: "bg-white",
       gitHubLink: "https://github.com/FarisAlsaif/Portfolio",
-      liveLink: "https://www.nyyf.app",
+      liveLink: "https://farisalsaif.netlify.app/",
     },
 
   ];
